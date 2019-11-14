@@ -5,7 +5,10 @@
 				<div class="pkpListPanelItem--submission__item">
 					<div class="pkpListPanelItem--submission__id">
 						<span class="-screenReader">{{ i18n.id }}</span>
-						<!-- [UPCH] Mostrando codigo SIDISI en lugar del submission id -->
+						<!-- [UPCH] Mostrando codigo SIDISI en lugar del submission id
+						Se requiere actualizar la funcion getBackendListProperties() de la clase lib/pkp/classes/services/PKPSubmissionService.inc.php
+						para obtener el codigo sidisi en este componente.
+						-->
 						{{ item.pages }}
 					</div>
 					<div v-if="item.authorString" class="pkpListPanelItem--submission__author">
