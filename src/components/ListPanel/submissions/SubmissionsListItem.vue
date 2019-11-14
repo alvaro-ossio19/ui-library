@@ -5,7 +5,8 @@
 				<div class="pkpListPanelItem--submission__item">
 					<div class="pkpListPanelItem--submission__id">
 						<span class="-screenReader">{{ i18n.id }}</span>
-						{{ item.id }}
+						<!-- [UPCH] Mostrando codigo SIDISI en lugar del submission id -->
+						{{ item.pages }}
 					</div>
 					<div v-if="item.authorString" class="pkpListPanelItem--submission__author">
 						{{ item.authorString }}
