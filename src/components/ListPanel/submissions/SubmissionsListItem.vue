@@ -5,11 +5,14 @@
 				<div class="pkpListPanelItem--submission__item">
 					<div class="pkpListPanelItem--submission__id">
 						<span class="-screenReader">{{ i18n.id }}</span>
-						<!-- [UPCH] Mostrando codigo SIDISI en lugar del submission id
+						<!-- [UPCH] Mostrando codigo SIDISI en lugar del id del submission
 						Se requiere actualizar la funcion getBackendListProperties() de la clase lib/pkp/classes/services/PKPSubmissionService.inc.php
-						para obtener el codigo sidisi en este componente.
+						del proyecto OJS para obtener el codigo sidisi en este componente. 
+						En dicha clase tambien se requiere establecer la propiedad sidisi_id en la funcion getProperties() para que el
+						valor se pueda obtener de la funcion getSidisiId() de la clase personalizada lib/pkp/classes/submission/Submission.inc.php.
+						Una vez definidos ya podremos utilizar la propiedad sidisi_id en este componente Vue.
 						-->
-						{{ item.pages }}
+						{{ item.sidisi_id }}
 					</div>
 					<div v-if="item.authorString" class="pkpListPanelItem--submission__author">
 						{{ item.authorString }}
