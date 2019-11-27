@@ -1,7 +1,7 @@
-PKP UI Library para OJS 3.1.2 (SIDISI)
+PKP UI Library para OJS 3.1.2 (SIDISI Revisión Académica)
 =======
 
-> Esta es una version personalizada de ui-library para SIDISI. Esta versión de la librería es 3.1.2, que corresponse a la versión 3.1.2 de OJS.
+> Esta es una version personalizada de ui-library para SIDISI Revisión Académica. Esta versión de la librería es 3.1.2, que corresponse a la versión 3.1.2 de OJS.
 
 # Instalación
 
@@ -44,6 +44,7 @@ Vamos a la rama stable-3_1_2 (bifurcación):
 Para fusionar los cambios del repositorio padre desde upstream/stable-3_1_2 con la rama origin/stable-3_1_2 (bifurcación):
 
     $ git pull upstream stable-3_1_2
+    $ git pull origin/stable-3_1_2 origin/stable-3_1_2-upch-rev-aca
     $ git push
 
 Vamos a la raíz de OJS para instalar o actualizar dependencias con [NPM](https://www.npmjs.com/):
